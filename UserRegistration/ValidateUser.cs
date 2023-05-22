@@ -32,5 +32,11 @@ namespace UserRegistration
             Regex regex = new Regex(pattern);
             return regex.IsMatch(mobileNumber);
         }
+        public bool ValidatePassword(string password)
+        {
+            string pattern = @"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(password);
+        }
     }
 }

@@ -12,5 +12,12 @@ namespace UserRegistration
             Regex regex = new Regex(pattern);
             return regex.IsMatch(firstName);
         }
+
+        public bool ValidateLastName(string lastName)
+        {
+            string pattern = @"^[A-Z][a-zA-Z]{2,}$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(lastName);
+        }
     }
 }

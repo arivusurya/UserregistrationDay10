@@ -8,14 +8,14 @@ namespace UserRegistration{
         public static void Main(string[] args)
         {
             ValidateUser validateUser   = new ValidateUser();
-            string firstName = "Ares";
-            bool isvalid = validateUser.ValidateFirstName(firstName);
+            string lastName = "Zeus";
+            bool isvalid = validateUser.ValidateLastName(lastName);
 
             if(isvalid)
             {
-                Console.WriteLine("{0} is valid" ,firstName);
+                Console.WriteLine("{0} is valid" ,lastName);
             }else{
-                Console.WriteLine("{0} is Not valid", firstName);
+                Console.WriteLine("{0} is Not valid", lastName);
             }
         }
     }

@@ -26,5 +26,11 @@ namespace UserRegistration
             Regex regex = new Regex(pattern);
             return regex.IsMatch(email);
         }
+        public bool ValidateMobileNumber(string mobileNumber)
+        {
+            string pattern = @"^[1-9][0-9]{0,2}\s[1-9][0-9]{9}$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(mobileNumber);
+        }
     }
 }

@@ -8,14 +8,14 @@ namespace UserRegistration{
         public static void Main(string[] args)
         {
             ValidateUser validateUser   = new ValidateUser();
-            string lastName = "Zeus";
-            bool isvalid = validateUser.ValidateLastName(lastName);
+           string inputMobileNumber = "91 9919819801";
+            bool isvalid = validateUser.ValidateMobileNumber(inputMobileNumber);
 
             if(isvalid)
             {
-                Console.WriteLine("{0} is valid" ,lastName);
+                Console.WriteLine("{0} is valid" ,inputMobileNumber);
             }else{
-                Console.WriteLine("{0} is Not valid", lastName);
+                Console.WriteLine("{0} is Not valid", inputMobileNumber);
             }
         }
     }

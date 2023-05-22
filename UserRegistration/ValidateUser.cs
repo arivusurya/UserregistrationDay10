@@ -19,5 +19,12 @@ namespace UserRegistration
             Regex regex = new Regex(pattern);
             return regex.IsMatch(lastName);
         }
+
+        public bool ValidateEmail(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9]+([._%+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*(\.[a-zA-Z]{2,})+$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(email);
+        }
     }
 }
